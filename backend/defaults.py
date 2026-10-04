@@ -10,10 +10,10 @@ from copy import deepcopy
 DEFAULTS = {
     "analysis_type": "fft",
     "analysis": {
-        "channel": 0, "nfft": 2048, "nperseg": 2048, "noverlap": 1024,
+        "channel": 0, "nfft": 8192, "nperseg": 8192, "noverlap": 4096,
         "window": "hann", "window_parameter": 14, "detrend": "constant",
         "scaling": "density", "return_onesided": True, "amplitude": "magnitude",
-        "db": False, "start_time": 0, "end_time": 0,
+        "db": True, "start_time": 0, "end_time": 0,
     },
     "figure": {"size": [10, 5.8], "dpi": 130, "background": "white"},
     "axes": {"xscale": "linear", "yscale": "linear", "background": "white", "xlim": None, "ylim": None},
